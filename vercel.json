@@ -1,13 +1,15 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
-    }
-  ],
-  "routes": [
-    { "src": "^/(.*)$", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+```
+Press **Ctrl + S** to save.
+
+---
+
+**3. Now run in terminal:**
+```
+git add .
+git commit -m "fix blank page"
+git push origin master
