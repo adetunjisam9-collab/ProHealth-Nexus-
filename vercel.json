@@ -4,12 +4,3 @@
   ]
 }
 ```
-Press **Ctrl + S** to save.
-
----
-
-**3. Now run in terminal:**
-```
-git add .
-git commit -m "fix blank page"
-git push origin master
